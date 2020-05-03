@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">WorkTimeLogger</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_setting">Setting</string>
+    <string name="title_report">Report</string>
+    <string name="monthly_time">In month</string>
+    <string name="weekly_time">In week</string>
+    <string name="daily_time">In day</string>
+    <string name="start_work">Start Work</string>
+    <string name="from">From</string>
+    <string name="to">to</string>
+    <string name="duration">Duration</string>
+    <string name="submit_time">Submit time</string>
+    <string name="default_month_time">176 h</string>
+    <string name="default_week_time">43 h</string>
+    <string name="default_day_time">8 h</string>
+</resources>

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_page_color"
+    android:paddingStart="@dimen/fragment_left_right_padding"
+    android:paddingTop="@dimen/fragment_top_down_padding"
+    android:paddingEnd="@dimen/fragment_left_right_padding"
+    android:paddingBottom="@dimen/fragment_top_down_padding"
+    tools:context=".ui.home.HomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/summary_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/summary_table_margin_top"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/summary_label_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/summary_table_margin_top"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/background_summary_left_label_cell"
+                android:gravity="center"
+                android:padding="@dimen/summary_label_cell_padding"
+                android:text="@string/monthly_time"
+                android:textColor="@color/summary_label_text_color"
+                android:textSize="@dimen/summary_label_text_size" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/background_summary_center_label_cell"
+                android:gravity="center"
+                android:padding="@dimen/summary_label_cell_padding"
+                android:text="@string/weekly_time"
+                android:textColor="@color/summary_label_text_color"
+                android:textSize="@dimen/summary_label_text_size" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/background_summary_right_label_cell"
+                android:gravity="center"
+                android:padding="@dimen/summary_label_cell_padding"
+                android:text="@string/daily_time"
+                android:textColor="@color/summary_label_text_color"
+                android:textSize="@dimen/summary_label_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/summary_label_value_space"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/summary_label_layout">
+
+            <TextView
+                android:id="@+id/month_time_tv"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/background_summary_left_value_cell"
+                android:gravity="center"
+                android:padding="@dimen/summary_label_cell_padding"
+                android:text="@string/default_month_time"
+                android:textColor="@color/summary_value_text_color"
+                android:textSize="@dimen/summary_value_text_size" />
+
+            <TextView
+                android:id="@+id/week_time_tv"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/background_summary_center_value_cell"
+                android:gravity="center"
+                android:padding="@dimen/summary_label_cell_padding"
+                android:text="@string/default_week_time"
+                android:textColor="@color/summary_value_text_color"
+                android:textSize="@dimen/summary_value_text_size" />
+
+            <TextView
+                android:id="@+id/day_time_tv"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/background_summary_right_value_cell"
+                android:gravity="center"
+                android:padding="@dimen/summary_label_cell_padding"
+                android:text="@string/default_day_time"
+                android:textColor="@color/summary_value_text_color"
+                android:textSize="@dimen/summary_value_text_size" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/calendar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/persian_calendar_side_margin"
+        android:layout_marginTop="@dimen/persian_calendar_top_margin"
+        android:layout_marginEnd="@dimen/persian_calendar_side_margin"
+        android:background="@drawable/background_persian_calendar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/summary_layout">
+
+        <ir.mirrajabi.persiancalendar.PersianCalendarView
+            android:id="@+id/persian_calendar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/persian_calendar_height"
+            app:pcv_colorBackground="@color/persian_calendar_background_color"
+            app:pcv_colorDayName="@color/persian_calendar_day_name_color"
+            app:pcv_colorHoliday="@color/persian_calendar_holiday_color"
+            app:pcv_colorHolidaySelected="@color/persian_calendar_holiday_selected_day_color"
+            app:pcv_colorNormalDay="@color/persian_calendar_normal_day_color"
+            app:pcv_colorNormalDaySelected="@color/persian_calendar_normal_selected_day_color"
+            app:pcv_eventUnderlineColor="@android:color/transparent"
+            app:pcv_fontSize="@dimen/persian_calendar_font_size"
+            app:pcv_headersFontSize="@dimen/persian_calendar_font_size"
+            app:pcv_todayBackground="@color/persian_calendar_today_background_color" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/home_button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/calendar_layout">
+
+        <Button
+            android:id="@+id/submit_time_work_btn"
+            style="@style/CustomButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:text="@string/submit_time" />
+
+        <Button
+            android:id="@+id/start_btn"
+            style="@style/CustomButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:text="@string/start_work" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/today_label_log_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/summary_table_margin_top"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/home_button_layout">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/background_summary_left_label_cell"
+            android:gravity="center"
+            android:padding="@dimen/summary_label_cell_padding"
+            android:text="@string/from"
+            android:textColor="@color/summary_label_text_color"
+            android:textSize="@dimen/summary_label_text_size" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/background_summary_center_label_cell"
+            android:gravity="center"
+            android:padding="@dimen/summary_label_cell_padding"
+            android:text="@string/to"
+            android:textColor="@color/summary_label_text_color"
+            android:textSize="@dimen/summary_label_text_size" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/background_summary_right_label_cell"
+            android:gravity="center"
+            android:padding="@dimen/summary_label_cell_padding"
+            android:text="@string/duration"
+            android:textColor="@color/summary_label_text_color"
+            android:textSize="@dimen/summary_label_text_size" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/today_log_recycle_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/today_label_log_layout" />
+</androidx.constraintlayout.widget.ConstraintLayout>

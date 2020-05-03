@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#38B1AE</color>
+    <color name="colorPrimaryDark">#2A7A78</color>
+    <color name="colorAccent">#0779e4</color>
+
+    <color name="background_page_color">#EFF8F8</color>
+    <!-- ######## Summary table in Home Page #########-->
+    <color name="summary_label_cell_solid_color">@color/colorPrimary</color>
+    <color name="summary_label_text_color">#A7E4E3</color>
+    <color name="summary_value_cell_solid_color">#A7E4E3</color>
+    <color name="summary_value_text_color">#14216C</color>
+
+    <!-- ######## Persian Calendar in Home Page #########-->
+    <color name="persian_calendar_background_color">@android:color/transparent</color>
+    <color name="persian_calendar_day_name_color">#000000</color>
+    <color name="persian_calendar_holiday_color">#E40751</color>
+    <color name="persian_calendar_holiday_selected_day_color">@color/colorAccent</color>
+    <color name="persian_calendar_normal_day_color">@color/colorAccent</color>
+    <color name="persian_calendar_normal_selected_day_color">@color/colorAccent</color>
+    <color name="persian_calendar_today_background_color">#A7E4E3</color>
+    <color name="persian_calendar_stroke_color">#A7E4E3</color>
+
+    <!-- ######## Custom Button #########-->
+    <color name="custom_button_normal_color">@color/colorAccent</color>
+    <color name="custom_button_pressed_color">#599DDC</color>
+    <color name="custom_button_text_color">#ffffff</color>
+
+
+</resources>

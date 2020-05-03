@@ -1,0 +1,2 @@
+rootProject.name='WorkTimeLogger'
+include ':app'

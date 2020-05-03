@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/corner_radius" />
+            <solid android:color="@android:color/transparent" />
+            <stroke android:width="@dimen/persian_calendar_stroke_width" android:color="@color/persian_calendar_stroke_color" />
+            <padding android:bottom="@dimen/persian_calendar_frame_padding" android:left="@dimen/persian_calendar_frame_padding" android:right="@dimen/persian_calendar_frame_padding" android:top="@dimen/persian_calendar_frame_padding" />
+        </shape>
+    </item>
+</selector>

@@ -1,0 +1,33 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="fragment_left_right_padding">10dp</dimen>
+    <dimen name="fragment_top_down_padding">7dp</dimen>
+    <dimen name="corner_radius">7dp</dimen>
+
+    <!-- ######## Custom Button ######## -->
+    <dimen name="custom_button_text_size">18sp</dimen>
+    <dimen name="button_corner_radius">5dp</dimen>
+
+    <!-- ######## Summary Table in Home Page ######## -->
+    <dimen name="summary_label_value_space">1dp</dimen>
+    <dimen name="summary_label_cell_padding">8dp</dimen>
+    <dimen name="summary_label_cell_corner">@dimen/corner_radius</dimen>
+    <dimen name="summary_value_cell_corner">@dimen/corner_radius</dimen>
+    <dimen name="summary_value_text_size">16sp</dimen>
+    <dimen name="summary_label_text_size">19sp</dimen>
+    <dimen name="summary_table_margin_top">10dp</dimen>
+
+    <dimen name="from_to_duration_padding">10dp</dimen>
+
+    <!-- ######## Persian Calendar ######## -->
+    <dimen name="persian_calendar_font_size">18sp</dimen>
+    <dimen name="persian_calendar_height">190dp</dimen>
+    <dimen name="persian_calendar_stroke_width">2dp</dimen>
+    <dimen name="persian_calendar_frame_padding">7dp</dimen>
+    <dimen name="persian_calendar_side_margin">40dp</dimen>
+    <dimen name="persian_calendar_top_margin">25dp</dimen>
+
+</resources>
