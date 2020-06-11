@@ -166,7 +166,9 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="5dp"
             android:layout_weight="1"
-            android:text="@string/submit_time" />
+            android:elevation="@dimen/submit_time_btn_elevation"
+            android:text="@string/submit_time"
+            tools:targetApi="lollipop" />
 
         <Button
             android:id="@+id/start_btn"
@@ -175,6 +177,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="5dp"
             android:layout_weight="1"
+            android:elevation="@dimen/start_btn_elevation"
             android:text="@string/start_work" />
     </LinearLayout>
 
@@ -195,7 +198,7 @@
             android:layout_weight="1"
             android:background="@drawable/background_summary_left_label_cell"
             android:gravity="center"
-            android:padding="@dimen/summary_label_cell_padding"
+            android:padding="@dimen/today_label_cell_padding"
             android:text="@string/from"
             android:textColor="@color/summary_label_text_color"
             android:textSize="@dimen/summary_label_text_size" />
@@ -207,7 +210,7 @@
             android:layout_weight="1"
             android:background="@drawable/background_summary_center_label_cell"
             android:gravity="center"
-            android:padding="@dimen/summary_label_cell_padding"
+            android:padding="@dimen/today_label_cell_padding"
             android:text="@string/to"
             android:textColor="@color/summary_label_text_color"
             android:textSize="@dimen/summary_label_text_size" />
@@ -219,7 +222,7 @@
             android:layout_weight="1"
             android:background="@drawable/background_summary_right_label_cell"
             android:gravity="center"
-            android:padding="@dimen/summary_label_cell_padding"
+            android:padding="@dimen/today_label_cell_padding"
             android:text="@string/duration"
             android:textColor="@color/summary_label_text_color"
             android:textSize="@dimen/summary_label_text_size" />

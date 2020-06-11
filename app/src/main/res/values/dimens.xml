@@ -30,4 +30,8 @@
     <dimen name="persian_calendar_side_margin">40dp</dimen>
     <dimen name="persian_calendar_top_margin">25dp</dimen>
 
+    <dimen name="start_btn_elevation">15dp</dimen>
+    <dimen name="submit_time_btn_elevation">15dp</dimen>
+    <dimen name="today_label_cell_padding">4dp</dimen>
+
 </resources>
